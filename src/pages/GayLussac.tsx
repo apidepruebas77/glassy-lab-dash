@@ -24,8 +24,64 @@ const GayLussac = () => {
             </p>
           </div>
 
+          {/* Estudio Previo */}
+          <GlassCard className="mb-8 animate-fade-in [animation-delay:200ms]">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Fundamentos Teóricos</h2>
+            
+            <div className="space-y-6 text-muted-foreground">
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">¿Por qué funciona la Ley de Gay-Lussac?</h3>
+                <p className="mb-3">A nivel molecular, cuando aumenta la temperatura de un gas:</p>
+                <ul className="space-y-2 ml-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Las moléculas se mueven más rápido (mayor energía cinética)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Chocan con más fuerza contra las paredes del recipiente</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Si el volumen no puede expandirse (recipiente sellado), la presión aumenta proporcionalmente</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="backdrop-blur-sm bg-accent/5 border border-accent/20 rounded-xl p-6">
+                <h3 className="text-xl font-semibold text-foreground mb-3">Ecuación de los Gases Ideales</h3>
+                <p className="font-mono text-lg mb-3">PV = nRT</p>
+                <p className="mb-2">Cuando V, n y R son constantes: <span className="font-semibold">P/T = constante</span></p>
+                <p>Esto genera una relación lineal: <span className="font-mono bg-secondary/50 px-2 py-1 rounded">P = (nR/V) × T</span></p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">Aplicaciones Prácticas</h3>
+                <p className="mb-3">Esta ley explica fenómenos cotidianos:</p>
+                <ul className="space-y-2 ml-6">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span><strong>Ollas a presión:</strong> Mayor temperatura → mayor presión interna</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span><strong>Neumáticos:</strong> Se calientan al rodar → aumenta presión</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span><strong>Aerosoles:</strong> No exponer al calor (riesgo de explosión)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span><strong>Globos aerostáticos:</strong> Calentar aire → expande → menor densidad → flota</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </GlassCard>
+
           {/* Objetivo */}
-          <GlassCard className="mb-8 animate-scale-in [animation-delay:200ms]">
+          <GlassCard className="mb-8 animate-scale-in [animation-delay:400ms]">
             <div className="flex items-start gap-4">
               <div className="p-3 bg-accent/10 rounded-xl shrink-0">
                 <Target className="w-6 h-6 text-accent" />
@@ -42,14 +98,14 @@ const GayLussac = () => {
           </GlassCard>
 
           {/* Materiales */}
-          <GlassCard className="mb-8 animate-fade-in [animation-delay:400ms]">
+          <GlassCard className="mb-8 animate-fade-in [animation-delay:600ms]">
             <div className="flex items-start gap-4 mb-6">
               <div className="p-3 bg-accent/10 rounded-xl shrink-0">
                 <Beaker className="w-6 h-6 text-accent" />
               </div>
               <h2 className="text-2xl font-bold text-foreground">Materiales</h2>
             </div>
-            <ul className="space-y-3 text-muted-foreground">
+            <ul className="space-y-3 text-muted-foreground mb-8">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span>Erlenmeyer con tapón de caucho</span>
@@ -75,10 +131,11 @@ const GayLussac = () => {
                 <span>Magneto</span>
               </li>
             </ul>
+            <MediaPlaceholder type="image" />
           </GlassCard>
 
           {/* Procedimiento */}
-          <GlassCard className="mb-8 animate-slide-in-right [animation-delay:600ms]">
+          <GlassCard className="mb-8 animate-slide-in-right [animation-delay:800ms]">
             <div className="flex items-start gap-4 mb-6">
               <div className="p-3 bg-accent/10 rounded-xl shrink-0">
                 <Activity className="w-6 h-6 text-accent" />
@@ -101,14 +158,14 @@ const GayLussac = () => {
                 </li>
               ))}
             </ol>
-            <MediaPlaceholder type="image" />
+            <MediaPlaceholder type="video" />
           </GlassCard>
 
           {/* Resultados */}
-          <GlassCard className="mb-8 animate-fade-in [animation-delay:800ms]">
+          <GlassCard className="mb-8 animate-fade-in [animation-delay:1000ms]">
             <h2 className="text-2xl font-bold text-foreground mb-6">Resultados</h2>
             
-            <div className="space-y-6 mb-8">
+            <div className="space-y-6">
               <div className="backdrop-blur-sm bg-accent/5 border border-accent/20 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-foreground mb-4">Ajuste Lineal</h3>
                 <div className="space-y-3 text-muted-foreground">
@@ -144,12 +201,10 @@ const GayLussac = () => {
                 </div>
               </div>
             </div>
-
-            <MediaPlaceholder type="video" />
           </GlassCard>
 
           {/* Conclusiones */}
-          <GlassCard className="mb-8 animate-scale-in [animation-delay:1000ms]">
+          <GlassCard className="mb-8 animate-scale-in [animation-delay:1200ms]">
             <h2 className="text-2xl font-bold text-foreground mb-6">Conclusiones</h2>
             <div className="space-y-4 text-muted-foreground">
               <p className="flex items-start gap-3">
@@ -172,7 +227,7 @@ const GayLussac = () => {
           </GlassCard>
 
           {/* Procesos Matemáticos */}
-          <GlassCard className="animate-fade-in [animation-delay:1200ms]">
+          <GlassCard className="animate-fade-in [animation-delay:1400ms]">
             <h2 className="text-2xl font-bold text-foreground mb-6">Procesos Matemáticos</h2>
             <p className="text-muted-foreground mb-6">
               Análisis detallado de los cálculos y procedimientos matemáticos utilizados en el experimento.
