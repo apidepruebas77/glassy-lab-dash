@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import GlassCard from "@/components/GlassCard";
 import MediaPlaceholder from "@/components/MediaPlaceholder";
 import { Thermometer, Activity, Target, Beaker, CheckCircle2 } from "lucide-react";
@@ -236,6 +237,8 @@ const GayLussac = () => {
           </GlassCard>
         </div>
       </main>
+      
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import GlassCard from "@/components/GlassCard";
 import { ArrowRight, FlaskConical, BookOpen, LineChart } from "lucide-react";
 
@@ -98,6 +99,8 @@ const Home = () => {
           </div>
         </div>
       </main>
+      
+      <Footer />
     </div>
   );
 };
