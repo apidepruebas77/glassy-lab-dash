@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import GlassCard from "@/components/GlassCard";
 import MediaPlaceholder from "@/components/MediaPlaceholder";
 import { Thermometer, Activity, Target, Beaker, CheckCircle2 } from "lucide-react";
+import materialesImage from "@/assets/materiales-lab.jpeg";
 
 const GayLussac = () => {
   return (
@@ -132,7 +133,7 @@ const GayLussac = () => {
                 <span>Magneto</span>
               </li>
             </ul>
-            <MediaPlaceholder type="image" />
+            <MediaPlaceholder type="image" url={materialesImage} alt="Materiales del laboratorio" />
           </GlassCard>
 
           {/* Procedimiento */}
@@ -159,7 +160,7 @@ const GayLussac = () => {
                 </li>
               ))}
             </ol>
-            <MediaPlaceholder type="video" />
+            <MediaPlaceholder type="video" url="https://youtu.be/Jo8GCtXueEQ?si=XnnTeHM3pwjMVsRV" />
           </GlassCard>
 
           {/* Resultados */}
@@ -233,7 +234,7 @@ const GayLussac = () => {
             <p className="text-muted-foreground mb-6">
               Análisis detallado de los cálculos y procedimientos matemáticos utilizados en el experimento.
             </p>
-            <MediaPlaceholder type="video" />
+            <MediaPlaceholder type="video" url="https://youtu.be/rOnu2dLa_Cc?si=K5zHsfNTTaQAY6Te" />
           </GlassCard>
         </div>
       </main>
